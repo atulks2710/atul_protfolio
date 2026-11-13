@@ -1,0 +1,3264 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+
+
+    <meta charset="UTF-8">
+
+
+
+    <meta
+
+        name="viewport"
+
+        content="width=device-width, initial-scale=1.0"
+
+    >
+
+
+
+    <meta
+
+        name="description"
+
+        content="Atul K Shaiju — Developer Portfolio"
+
+    >
+
+
+
+    <meta
+
+        name="theme-color"
+
+        content="#ffffff"
+
+    >
+
+
+
+    <title>Atul — Creative Developer</title>
+
+
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+    <link
+
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap"
+
+        rel="stylesheet"
+
+    >
+
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+
+
+<!-- ==========================================
+
+     PRELOADER
+
+========================================== -->
+
+
+
+<div class="preloader">
+
+
+
+    <div class="loader-logo">
+
+        A<span>.</span>
+
+    </div>
+
+
+
+    <div class="loader-line">
+
+        <span></span>
+
+    </div>
+
+
+
+    <p>LOADING EXPERIENCE</p>
+
+
+
+</div>
+
+
+<!--
+    PRELOADER FAIL-SAFE
+    This small inline handler ensures the page is revealed even if
+    script.js fails to load or contains an unrelated JavaScript error.
+-->
+<script>
+(function () {
+    function hidePortfolioPreloader() {
+        const loader = document.querySelector(".preloader");
+        if (loader) {
+            loader.classList.add("hide");
+        }
+    }
+
+    // Normal path: reveal shortly after all page resources are loaded.
+    window.addEventListener("load", function () {
+        window.setTimeout(hidePortfolioPreloader, 500);
+    }, { once: true });
+
+    // Backup path: never leave the visitor stuck on the loading screen.
+    window.setTimeout(hidePortfolioPreloader, 5000);
+})();
+</script>
+
+
+
+
+
+<!-- ==========================================
+
+     CUSTOM CURSOR
+
+========================================== -->
+
+
+
+<div class="cursor-dot"></div>
+
+<div class="cursor-ring"></div>
+
+
+
+
+
+<!-- ==========================================
+
+     SCROLL PROGRESS
+
+========================================== -->
+
+
+
+<div class="scroll-progress"></div>
+
+
+
+
+
+<!-- ==========================================
+
+     BACKGROUND
+
+========================================== -->
+
+
+
+<div class="background-grid"></div>
+
+
+
+<div class="glow glow-one"></div>
+
+<div class="glow glow-two"></div>
+
+<div class="glow glow-three"></div>
+
+
+
+<canvas id="particles"></canvas>
+
+
+
+
+
+<!-- ==========================================
+
+     NAVBAR
+
+========================================== -->
+
+
+
+<header class="navbar">
+
+
+
+    <a href="#home" class="brand">
+
+
+
+        <span class="brand-symbol">A</span>
+
+
+
+        <span class="brand-name">
+
+            ATUL<span>.</span>
+
+        </span>
+
+
+
+    </a>
+
+
+
+
+
+    <nav class="nav-links">
+
+
+
+        <a
+
+            href="#home"
+
+            class="nav-link active"
+
+        >
+
+            Home
+
+        </a>
+
+
+
+        <a
+
+            href="#about"
+
+            class="nav-link"
+
+        >
+
+            About
+
+        </a>
+
+
+
+        <a
+
+            href="#work"
+
+            class="nav-link"
+
+        >
+
+            Work
+
+        </a>
+
+
+
+        <a
+
+            href="#skills"
+
+            class="nav-link"
+
+        >
+
+            Skills
+
+        </a>
+
+
+
+        <a
+
+            href="#contact"
+
+            class="nav-link"
+
+        >
+
+            Contact
+
+        </a>
+
+
+
+    </nav>
+
+
+
+
+
+    <a
+
+        href="#contact"
+
+        class="nav-cta"
+
+    >
+
+        Let's Talk
+
+        <span>↗</span>
+
+    </a>
+
+
+
+
+
+    <button
+
+        class="menu-toggle"
+
+        aria-label="Open menu"
+
+    >
+
+
+
+        <span></span>
+
+        <span></span>
+
+        <span></span>
+
+
+
+    </button>
+
+
+
+</header>
+
+
+
+
+
+<!-- ==========================================
+
+     MOBILE MENU
+
+========================================== -->
+
+
+
+<div class="mobile-menu">
+
+
+
+    <div class="mobile-menu-inner">
+
+
+
+        <a href="#home">Home</a>
+
+        <a href="#about">About</a>
+
+        <a href="#work">Work</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#contact">Contact</a>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<main>
+
+
+
+
+
+<!-- ==========================================
+
+     HERO
+
+========================================== -->
+
+
+
+<section
+
+    id="home"
+
+    class="hero section"
+
+>
+
+
+
+    <div class="hero-left reveal">
+
+
+
+        <div class="eyebrow">
+
+
+
+            <span class="status-dot"></span>
+
+
+
+            AVAILABLE FOR SELECTED PROJECTS
+
+
+
+        </div>
+
+
+
+
+
+        <h1>
+
+
+
+            Building
+
+
+
+            <span class="italic">
+
+                digital
+
+            </span>
+
+
+
+            experiences that
+
+
+
+            <span class="gold-text">
+
+                matter.
+
+            </span>
+
+
+
+        </h1>
+
+
+
+
+
+        <p class="hero-description">
+
+
+
+            Computer Science student and developer creating
+
+            applications, intelligent systems, cybersecurity
+
+            solutions and digital experiences with technology
+
+            and design working together.
+
+
+
+        </p>
+
+
+
+
+
+        <div class="hero-actions">
+
+
+
+            <a
+
+                href="#work"
+
+                class="btn btn-primary magnetic"
+
+            >
+
+
+
+                <span>
+
+                    Explore My Work
+
+                </span>
+
+
+
+                <span class="btn-arrow">
+
+                    ↗
+
+                </span>
+
+
+
+            </a>
+
+
+
+
+
+            <a
+
+                href="#contact"
+
+                class="text-link"
+
+            >
+
+
+
+                Start a conversation
+
+
+
+                <span>→</span>
+
+
+
+            </a>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="hero-meta">
+
+
+
+            <div>
+
+
+
+                <strong>04+</strong>
+
+
+
+                <span>
+
+                    CORE DOMAINS
+
+                </span>
+
+
+
+            </div>
+
+
+
+
+
+            <div>
+
+
+
+                <strong>10+</strong>
+
+
+
+                <span>
+
+                    PROJECTS
+
+                </span>
+
+
+
+            </div>
+
+
+
+
+
+            <div>
+
+
+
+                <strong>∞</strong>
+
+
+
+                <span>
+
+                    CURIOSITY
+
+                </span>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="hero-right reveal">
+
+
+
+        <div class="portrait-wrapper">
+
+
+
+            <div class="portrait-orbit orbit-one"></div>
+
+            <div class="portrait-orbit orbit-two"></div>
+
+
+
+
+
+            <div class="portrait-card">
+
+
+
+                <div class="portrait-overlay"></div>
+
+
+
+                <img
+
+                    src="assets/images/profile.jpg"
+
+                    alt="Atul profile"
+
+                    onerror="
+
+                        this.src='https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=85';
+
+                    "
+
+                >
+
+
+
+
+
+                <div class="portrait-info">
+
+
+
+                    <div>
+
+
+
+                        <span>
+
+                            BASED IN
+
+                        </span>
+
+
+
+                        <strong>
+
+                            KERALA, INDIA
+
+                        </strong>
+
+
+
+                    </div>
+
+
+
+
+
+                    <div class="portrait-number">
+
+                        01
+
+                    </div>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="floating-card float-card-one">
+
+
+
+                <span class="floating-icon">
+
+                    ✦
+
+                </span>
+
+
+
+                <div>
+
+
+
+                    <small>
+
+                        FOCUS
+
+                    </small>
+
+
+
+                    <strong>
+
+                        Creative Tech
+
+                    </strong>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="floating-card float-card-two">
+
+
+
+                <span class="floating-icon">
+
+                    +
+
+                </span>
+
+
+
+                <div>
+
+
+
+                    <small>
+
+                        BUILDING
+
+                    </small>
+
+
+
+                    <strong>
+
+                        Something Better
+
+                    </strong>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="hero-scroll">
+
+
+
+        <span>
+
+            SCROLL TO EXPLORE
+
+        </span>
+
+
+
+        <div class="scroll-line">
+
+            <span></span>
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ==========================================
+
+     MARQUEE
+
+========================================== -->
+
+
+
+<section class="marquee-section">
+
+
+
+    <div class="marquee-track">
+
+
+
+        <span>DEVELOPMENT</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>DESIGN</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>CYBERSECURITY</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>AI / ML</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>FLUTTER</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>CREATIVE TECHNOLOGY</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>DEVELOPMENT</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>DESIGN</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>CYBERSECURITY</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+        <span>AI / ML</span>
+
+        <span class="marquee-dot">✦</span>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ==========================================
+
+     ABOUT
+
+========================================== -->
+
+
+
+<section
+
+    id="about"
+
+    class="about section"
+
+>
+
+
+
+    <div class="section-label reveal">
+
+
+
+        <span>01</span>
+
+
+
+        <span>
+
+            ABOUT ME
+
+        </span>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="about-grid">
+
+
+
+        <div class="about-heading reveal">
+
+
+
+            <p class="small-heading">
+
+
+
+                MORE THAN
+
+
+
+                <span>
+
+                    JUST CODE.
+
+                </span>
+
+
+
+            </p>
+
+
+
+
+
+            <h2>
+
+
+
+                Technology should
+
+
+
+                <em>
+
+                    feel
+
+                </em>
+
+
+
+                as good as
+
+
+
+                it functions.
+
+
+
+            </h2>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="about-content reveal">
+
+
+
+            <p class="large-copy">
+
+
+
+                I enjoy turning complex ideas into simple,
+
+                useful and visually engaging digital products.
+
+                My interests sit at the intersection of software,
+
+                design, artificial intelligence and security.
+
+
+
+            </p>
+
+
+
+
+
+            <p>
+
+
+
+                From mobile applications and web platforms
+
+                to cybersecurity systems and experimental AI
+
+                ideas, every project is an opportunity to learn
+
+                something new and create something meaningful.
+
+
+
+            </p>
+
+
+
+
+
+            <a
+
+                href="#contact"
+
+                class="circle-link"
+
+            >
+
+
+
+                <span>
+
+                    LET'S<br>
+
+                    CREATE
+
+                </span>
+
+
+
+                <span class="circle-arrow">
+
+                    ↗
+
+                </span>
+
+
+
+            </a>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="about-line"></div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ==========================================
+
+     WORK
+
+========================================== -->
+
+
+
+<section
+
+    id="work"
+
+    class="work section"
+
+>
+
+
+
+    <div class="section-top">
+
+
+
+        <div class="section-label reveal">
+
+
+
+            <span>02</span>
+
+
+
+            <span>
+
+                SELECTED WORK
+
+            </span>
+
+
+
+        </div>
+
+
+
+
+
+        <p class="section-intro reveal">
+
+
+
+            Explore the actual screens, interfaces and
+
+            experiences behind each project.
+
+
+
+        </p>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- ======================================
+
+         FILTERS
+
+    ======================================= -->
+
+
+
+    <div class="work-filter reveal">
+
+
+
+        <button
+
+            class="filter-btn active"
+
+            data-filter="all"
+
+        >
+
+            All
+
+        </button>
+
+
+
+        <button
+
+            class="filter-btn"
+
+            data-filter="app"
+
+        >
+
+            Apps
+
+        </button>
+
+
+
+        <button
+
+            class="filter-btn"
+
+            data-filter="web"
+
+        >
+
+            Web
+
+        </button>
+
+
+
+        <button
+
+            class="filter-btn"
+
+            data-filter="security"
+
+        >
+
+            Security
+
+        </button>
+
+
+
+        <button
+
+            class="filter-btn"
+
+            data-filter="ai"
+
+        >
+
+            AI / ML
+
+        </button>
+
+
+
+    </div>
+
+
+
+
+
+    <!-- ======================================
+
+         PROJECTS
+
+    ======================================= -->
+
+
+
+    <div class="projects-grid">
+
+
+
+
+
+        <!-- ==================================
+
+             PROJECT 01
+
+        =================================== -->
+
+
+
+        <article
+
+            class="project-card project-large tilt-card reveal"
+
+            data-category="app"
+
+            data-project="0"
+
+        >
+
+
+
+            <div class="project-image">
+
+
+
+                <img
+
+                    src="assets/images/project-01-000.png"
+
+                    alt="LeagueTrack screen 1"
+
+
+
+                    onerror="
+
+                        this.src='https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?auto=format&fit=crop&w=1400&q=85';
+
+                    "
+
+                >
+
+
+
+                <div class="image-shade"></div>
+
+
+
+
+
+                <div class="project-number">
+
+                    01
+
+                </div>
+
+
+
+
+
+                <div class="screens-badge">
+
+                    <span>✦</span>
+
+                    22 SCREENS
+
+                </div>
+
+
+
+
+
+                <button
+
+                    class="project-open"
+
+                    aria-label="View LeagueTrack screens"
+
+                >
+
+                    ↗
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="project-info">
+
+
+
+                <div>
+
+
+
+                    <span class="project-type">
+
+                        MOBILE APPLICATION
+
+                    </span>
+
+
+
+                    <h3>
+
+                        LeagueTrack
+
+                    </h3>
+
+
+
+                </div>
+
+
+
+
+
+                <p>
+
+
+
+                    Football tournament management,
+
+                    statistics, schedules and team tracking
+
+                    in one experience.
+
+
+
+                </p>
+
+
+
+
+
+                <div class="project-tags">
+
+
+
+                    <span>Flutter</span>
+
+                    <span>Firebase</span>
+
+                    <span>Dart</span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </article>
+
+
+
+
+
+        <!-- ==================================
+
+             PROJECT 02
+
+        =================================== -->
+
+
+
+        <article
+
+            class="project-card tilt-card reveal"
+
+            data-category="security"
+
+            data-project="1"
+
+        >
+
+
+
+            <div class="project-image">
+
+
+
+                <img
+
+                    src="assets/images/project-02-000.png"
+
+                    alt="SentinelX screen 1"
+
+
+
+                    onerror="
+
+                        this.src='https://images.unsplash.com/photo-1563013544-824ae1b704d3?auto=format&fit=crop&w=1200&q=85';
+
+                    "
+
+                >
+
+
+
+                <div class="image-shade"></div>
+
+
+
+
+
+                <div class="project-number">
+
+                    02
+
+                </div>
+
+
+
+
+
+                <div class="screens-badge">
+
+                    <span>✦</span>
+
+                    06 SCREENS
+
+                </div>
+
+
+
+
+
+                <button
+
+                    class="project-open"
+
+                    aria-label="View SentinelX screens"
+
+                >
+
+                    ↗
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="project-info">
+
+
+
+                <div>
+
+
+
+                    <span class="project-type">
+
+                        CYBERSECURITY
+
+                    </span>
+
+
+
+                    <h3>
+
+                        SentinelX
+
+                    </h3>
+
+
+
+                </div>
+
+
+
+
+
+                <p>
+
+
+
+                    Security monitoring focused on endpoint
+
+                    visibility, USB activity, file events and
+
+                    centralized event collection.
+
+
+
+                </p>
+
+
+
+
+
+                <div class="project-tags">
+
+
+
+                    <span>Python</span>
+
+                    <span>Flask</span>
+
+                    <span>MongoDB</span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </article>
+
+
+
+
+
+        <!-- ==================================
+
+             PROJECT 03
+
+        =================================== -->
+
+
+
+        <article
+
+    class="project-card tilt-card reveal"
+
+    data-category="web"
+
+    data-project="2"
+
+>
+
+
+
+    <div class="project-image">
+
+
+
+        <img
+
+            src="assets/images/project-03-00.png"
+
+            alt="ANSORA Mark Processing System dashboard"
+
+            onerror="this.src='https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=85';"
+
+        >
+
+
+
+        <div class="image-shade"></div>
+
+
+
+        <div class="project-number">
+
+            03
+
+        </div>
+
+
+
+        <div class="screens-badge">
+
+            <span>✦</span>
+
+            09 SCREENS
+
+        </div>
+
+
+
+        <button
+
+            class="project-open"
+
+            aria-label="View ANSORA Mark Processing System screens"
+
+        >
+
+            ↗
+
+        </button>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="project-info">
+
+
+
+        <div>
+
+
+
+            <span class="project-type">
+
+                WEB APPLICATION / AUTOMATION
+
+            </span>
+
+
+
+            <h3>
+
+                ANSORA Mark Processing System
+
+            </h3>
+
+
+
+        </div>
+
+
+
+
+
+        <p>
+
+            An automated academic mark processing platform
+
+            that extracts PDF results, matches student records,
+
+            calculates marks and generates Excel reports.
+
+        </p>
+
+
+
+
+
+        <div class="project-tags">
+
+
+
+            <span>Python</span>
+
+            <span>Flask</span>
+
+            <span>PyMuPDF</span>
+
+            <span>OpenPyXL</span>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</article>
+
+
+
+
+
+        <!-- ==================================
+
+             PROJECT 04
+
+        =================================== -->
+
+
+
+        <article
+
+            class="project-card project-large tilt-card reveal"
+
+            data-category="web"
+
+            data-project="3"
+
+        >
+
+
+
+            <div class="project-image">
+
+
+
+                <img
+
+                    src="assets/images/skill-bridge-1.png"
+
+                    alt="Skill Bridge platform screen"
+
+
+
+                    onerror="
+
+                        this.src='https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1400&q=85';
+
+                    "
+
+                >
+
+
+
+                <div class="image-shade"></div>
+
+
+
+
+
+                <div class="project-number">
+
+                    04
+
+                </div>
+
+
+
+
+
+                <div class="screens-badge">
+
+                    <span>✦</span>
+
+                    HACKATHON PROJECT
+
+                </div>
+
+
+
+
+
+                <button
+
+                    class="project-open"
+
+                    aria-label="View Skill Bridge screens"
+
+                >
+
+                    ↗
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="project-info">
+
+
+
+                <div>
+
+
+
+                    <span class="project-type">
+
+                        HACKATHON / WEB PLATFORM
+
+                    </span>
+
+
+
+                    <h3>
+
+                        Skill Bridge
+
+                    </h3>
+
+
+
+                </div>
+
+
+
+
+
+                <p>
+
+
+
+                    An academia–industry collaboration platform
+                    connecting students, institutions and employers
+                    through skills, opportunities and verified portfolios.
+
+
+
+                </p>
+
+
+
+
+
+                <div class="project-tags">
+
+
+
+                    <span>Firebase</span>
+
+                    <span>Cloudinary</span>
+
+                    <span>Web Platform</span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </article>
+
+
+
+
+
+        <!-- ==================================
+
+             PROJECT 05
+
+        =================================== -->
+
+
+
+        <article
+
+            class="project-card tilt-card reveal"
+
+            data-category="app"
+
+            data-project="4"
+
+        >
+
+
+
+            <div class="project-image">
+
+
+
+                <img
+
+                    src="assets/images/project-06-0.png"
+
+                    alt="PetCare screen 1"
+
+
+
+                    onerror="
+
+                        this.src='https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=1200&q=85';
+
+                    "
+
+                >
+
+
+
+                <div class="image-shade"></div>
+
+
+
+
+
+                <div class="project-number">
+
+                    05
+
+                </div>
+
+
+
+
+
+                <div class="screens-badge">
+
+                    <span>✦</span>
+
+                    12 SCREENS
+
+                </div>
+
+
+
+
+
+                <button
+
+                    class="project-open"
+
+                    aria-label="View PetCare screens"
+
+                >
+
+                    ↗
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="project-info">
+
+
+
+                <div>
+
+
+
+                    <span class="project-type">
+
+                        APP / BACKEND
+
+                    </span>
+
+
+
+                    <h3>
+
+                        PetCare+
+
+                    </h3>
+
+
+
+                </div>
+
+
+
+
+
+                <p>
+
+
+
+                    A connected pet-care experience with
+
+                    digital records, reminders and accessible
+
+                    information.
+
+
+
+                </p>
+
+
+
+
+
+                <div class="project-tags">
+
+
+
+                    <span>Flutter</span>
+
+                    <span>Node.js</span>
+
+                    <span>Firebase</span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </article>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="work-bottom reveal">
+
+
+
+        <p>
+
+
+
+            MORE PROJECTS ARE
+
+
+
+            <span>
+
+                COMING SOON.
+
+            </span>
+
+
+
+        </p>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ==========================================
+
+     SKILLS
+
+========================================== -->
+
+
+
+<section
+
+    id="skills"
+
+    class="skills section"
+
+>
+
+
+
+    <div class="section-label reveal">
+
+
+
+        <span>03</span>
+
+
+
+        <span>
+
+            CAPABILITIES
+
+        </span>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="skills-layout">
+
+
+
+        <div class="skills-heading reveal">
+
+
+
+            <h2>
+
+
+
+                Tools I use to
+
+
+
+                <span>
+
+                    turn ideas
+
+                </span>
+
+
+
+                into reality.
+
+
+
+            </h2>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="skills-list">
+
+
+
+
+
+            <div class="skill-item reveal">
+
+
+
+                <div class="skill-top">
+
+
+
+                    <span class="skill-number">
+
+                        01
+
+                    </span>
+
+
+
+                    <h3>
+
+                        Application Development
+
+                    </h3>
+
+
+
+                    <span class="skill-symbol">
+
+                        ↗
+
+                    </span>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="skill-bottom">
+
+
+
+                    <span>Flutter</span>
+
+                    <span>Dart</span>
+
+                    <span>Firebase</span>
+
+                    <span>Android</span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="skill-item reveal">
+
+
+
+                <div class="skill-top">
+
+
+
+                    <span class="skill-number">
+
+                        02
+
+                    </span>
+
+
+
+                    <h3>
+
+                        Web Development
+
+                    </h3>
+
+
+
+                    <span class="skill-symbol">
+
+                        ↗
+
+                    </span>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="skill-bottom">
+
+
+
+                    <span>HTML</span>
+
+                    <span>CSS</span>
+
+                    <span>JavaScript</span>
+
+                    <span>Responsive UI</span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="skill-item reveal">
+
+
+
+                <div class="skill-top">
+
+
+
+                    <span class="skill-number">
+
+                        03
+
+                    </span>
+
+
+
+                    <h3>
+
+                        Cybersecurity
+
+                    </h3>
+
+
+
+                    <span class="skill-symbol">
+
+                        ↗
+
+                    </span>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="skill-bottom">
+
+
+
+                    <span>SIEM</span>
+
+                    <span>Python</span>
+
+                    <span>Networking</span>
+
+                    <span>Endpoint Security</span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="skill-item reveal">
+
+
+
+                <div class="skill-top">
+
+
+
+                    <span class="skill-number">
+
+                        04
+
+                    </span>
+
+
+
+                    <h3>
+
+                        AI / Machine Learning
+
+                    </h3>
+
+
+
+                    <span class="skill-symbol">
+
+                        ↗
+
+                    </span>
+
+
+
+                </div>
+
+
+
+
+
+                <div class="skill-bottom">
+
+
+
+                    <span>Python</span>
+
+                    <span>Computer Vision</span>
+
+                    <span>ML</span>
+
+                    <span>Data</span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ==========================================
+
+     APPROACH
+
+========================================== -->
+
+
+
+<section class="approach section">
+
+
+
+    <div class="approach-card reveal">
+
+
+
+        <div class="approach-number">
+
+            04
+
+        </div>
+
+
+
+
+
+        <div class="approach-content">
+
+
+
+            <span class="project-type">
+
+                MY APPROACH
+
+            </span>
+
+
+
+
+
+            <h2>
+
+
+
+                Think.
+
+
+
+                <span>
+
+                    Build.
+
+                </span>
+
+
+
+                Refine.
+
+
+
+            </h2>
+
+
+
+
+
+            <p>
+
+
+
+                Good digital products aren't created by
+
+                code alone. They come from understanding
+
+                the problem, designing the experience and
+
+                continuously improving the result.
+
+
+
+            </p>
+
+
+
+        </div>
+
+
+
+
+
+        <div class="approach-mark">
+
+            ✦
+
+        </div>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+
+
+<!-- ==========================================
+
+     CONTACT
+
+========================================== -->
+
+
+
+<section
+
+    id="contact"
+
+    class="contact section"
+
+>
+
+
+
+    <div class="section-label reveal">
+
+
+
+        <span>05</span>
+
+
+
+        <span>
+
+            CONTACT
+
+        </span>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="contact-content reveal">
+
+
+
+        <p class="contact-eyebrow">
+
+            HAVE AN IDEA?
+
+        </p>
+
+
+
+
+
+        <h2>
+
+
+
+            Let's make
+
+            something
+
+            <em>remarkable.</em>
+
+
+
+        </h2>
+
+
+
+
+
+        <p class="contact-description">
+
+
+
+            Whether it is a product idea, collaboration,
+
+            portfolio project or simply a conversation about
+
+            technology, I'd love to hear from you.
+
+
+
+        </p>
+
+
+
+
+
+        <a
+
+            href="mailto:atulshaiju10@gmail.com"
+
+            class="contact-email"
+
+        >
+
+
+
+            atulshaiju10@gmail.com
+
+
+
+            <span>
+
+                ↗
+
+            </span>
+
+
+
+        </a>
+
+
+
+    </div>
+
+
+
+
+
+    <div class="social-row reveal">
+
+
+
+        <a
+            href="https://www.instagram.com/_.4tul_._?psln=NzlpYXppZ3p0emZ5"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram profile"
+        >
+            Instagram
+            <span>↗</span>
+        </a>
+
+
+
+
+
+        <a
+            href="https://www.linkedin.com/in/atul-k-shaiju"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+        >
+            LinkedIn
+            <span>↗</span>
+        </a>
+
+
+
+
+
+        <a
+            href="https://github.com/atulks2710"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub profile atulks2710"
+        >
+            GitHub <span class="social-handle">@atulks2710</span>
+            <span>↗</span>
+        </a>
+
+
+
+    </div>
+
+
+
+</section>
+
+
+
+</main>
+
+
+
+
+
+<!-- ==========================================
+
+     FOOTER
+
+========================================== -->
+
+
+
+<footer class="footer">
+
+
+
+    <div class="footer-left">
+
+
+
+        ©
+
+        <span id="year"></span>
+
+        ATUL
+
+
+
+    </div>
+
+
+
+
+
+    <div class="footer-center">
+
+
+
+        BUILT WITH HTML · CSS · JAVASCRIPT
+
+
+
+    </div>
+
+
+
+
+
+    <a
+
+        href="#home"
+
+        class="back-top"
+
+    >
+
+
+
+        BACK TO TOP ↑
+
+
+
+    </a>
+
+
+
+</footer>
+
+
+
+
+
+<!-- ==========================================
+
+     PROJECT GALLERY MODAL
+
+========================================== -->
+
+
+
+<div class="project-modal">
+
+
+
+    <div class="modal-overlay"></div>
+
+
+
+
+
+    <div class="modal-window">
+
+
+
+
+
+        <!-- Close -->
+
+
+
+        <button
+
+            class="modal-close"
+
+            aria-label="Close project"
+
+        >
+
+            ×
+
+        </button>
+
+
+
+
+
+        <!-- ==================================
+
+             TOP PART
+
+        =================================== -->
+
+
+
+        <div class="modal-top">
+
+
+
+
+
+            <div class="modal-heading">
+
+
+
+                <span
+
+                    id="modalCategory"
+
+                    class="modal-category"
+
+                >
+
+                    MOBILE APPLICATION
+
+                </span>
+
+
+
+
+
+                <h2 id="modalTitle">
+
+                    LeagueTrack
+
+                </h2>
+
+
+
+
+
+                <p id="modalDescription">
+
+
+
+                    Project description goes here.
+
+
+
+                </p>
+
+
+
+
+
+                <div
+
+                    id="modalTags"
+
+                    class="modal-tags"
+
+                ></div>
+
+
+
+            </div>
+
+
+
+
+
+            <div class="modal-counter">
+
+
+
+                <span
+
+                    id="currentScreen"
+
+                >
+
+                    01
+
+                </span>
+
+
+
+                <i>/</i>
+
+
+
+                <span
+
+                    id="totalScreens"
+
+                >
+
+                    06
+
+                </span>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <!-- ==================================
+
+             GALLERY
+
+        =================================== -->
+
+
+
+        <div class="modal-gallery">
+
+
+
+
+
+            <!-- Main image -->
+
+
+
+            <div class="gallery-main">
+
+
+
+                <div class="gallery-image-wrap">
+
+
+
+                    <img
+
+                        id="modalImage"
+
+                        src=""
+
+                        alt="Project screenshot"
+
+                    >
+
+
+
+                </div>
+
+
+
+
+
+                <!-- Previous -->
+
+
+
+                <button
+
+                    id="galleryPrev"
+
+                    class="gallery-arrow gallery-prev"
+
+                    aria-label="Previous screenshot"
+
+                >
+
+                    ←
+
+                </button>
+
+
+
+
+
+                <!-- Next -->
+
+
+
+                <button
+
+                    id="galleryNext"
+
+                    class="gallery-arrow gallery-next"
+
+                    aria-label="Next screenshot"
+
+                >
+
+                    →
+
+                </button>
+
+
+
+
+
+                <!-- Image info -->
+
+
+
+                <div class="gallery-image-info">
+
+
+
+                    <span
+
+                        id="screenLabel"
+
+                    >
+
+                        HOME SCREEN
+
+                    </span>
+
+
+
+                    <span>
+
+                        DRAG / CLICK TO EXPLORE
+
+                    </span>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+            <!-- ==================================
+
+                 THUMBNAILS
+
+            =================================== -->
+
+
+
+            <div class="gallery-thumbnails">
+
+
+
+                <div
+
+                    id="thumbnailContainer"
+
+                    class="thumbnail-track"
+
+                >
+
+
+
+                    <!-- JavaScript inserts thumbnails -->
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+        <!-- ==================================
+
+             BOTTOM
+
+        =================================== -->
+
+
+
+        <div class="modal-bottom">
+
+
+
+            <div>
+
+
+
+                <span class="modal-bottom-label">
+
+                    PROJECT EXPERIENCE
+
+                </span>
+
+
+
+                <p>
+
+                    Explore every screen of this project.
+
+                </p>
+
+
+
+            </div>
+
+
+
+
+
+            <a
+
+                href="#"
+
+                id="modalLink"
+
+                class="modal-link"
+
+            >
+
+
+
+                VIEW PROJECT
+
+
+
+                <span>
+
+                    ↗
+
+                </span>
+
+
+
+            </a>
+
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+</div>
+
+
+
+
+
+<script src="script.js" onerror="document.querySelector('.preloader')?.classList.add('hide')"></script>
+
+
+
+</body>
+
+
+
+</html>
